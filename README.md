@@ -44,7 +44,7 @@ Install [Node.js](https://nodejs.org/) and npm before running the project.
 1. Clone the repository:
 
    ```bash
-   git clone YOUR_GITHUB_REPOSITORY_URL
+   git clone https://github.com/RadhakrishnaPaiH/havenmart
    ```
 
 2. Navigate to the project folder:
