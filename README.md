@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# HavenMart – E-Commerce Product Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+HavenMart is a React-based E-Commerce web application built as a portfolio project. It provides a shopping experience for customers and product and order management features for administrators.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Customer Features
+- Browse products across multiple categories.
+- Search, filter, and sort products.
+- View product details, prices, and stock availability.
+- Add products to the shopping cart and update quantities.
+- Add and remove products from the wishlist.
+- User login and logout.
+- View order history and cancel eligible orders.
+- Dark and light theme support.
 
-### `npm start`
+### Admin Features
+- Admin dashboard with product, category, order, user, revenue, and low-stock summaries.
+- Add, edit, and delete products.
+- Search and filter products by category and stock status.
+- Manage orders and their statuses.
+- View registered user information except their password in User Dashboard.
+- Monitor product stock availability.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- React Router
+- React Hooks and Context API
+- Browser Local Storage
+- Fake Store API
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+Install [Node.js](https://nodejs.org/) and npm before running the project.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone YOUR_GITHUB_REPOSITORY_URL
+   ```
 
-### `npm run eject`
+2. Navigate to the project folder:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd YOUR_PROJECT_FOLDER
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install the dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Start the development server:
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Highlights
 
-### Code Splitting
+- Component-based React architecture.
+- Shared state management using Context API.
+- Persistent cart and wishlist data using Local Storage.
+- Reusable product cards and filtering controls.
+- Separate customer-facing and admin interfaces.
+- Responsive styling and theme switching.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Project Status
 
-### Analyzing the Bundle Size
+HavenMart is a frontend portfolio project. It demonstrates e-commerce interface development and client-side state management. It does not currently represent a production-ready online store with a fully implemented backend or real payment processing.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Future Improvements
 
-### Making a Progressive Web App
+- Integrate a backend with Node.js and Express.
+- Store application data in MongoDB.
+- Add secure server-side authentication and authorization.
+- Integrate a payment gateway.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Author
 
-### Advanced Configuration
+**Radhakrishna Pai H**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Developed as a learning project to practice React, JavaScript, component design, state management, and e-commerce workflows.

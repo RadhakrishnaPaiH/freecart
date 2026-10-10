@@ -1,0 +1,251 @@
+.checkout-page {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 40px 30px 60px;
+
+    box-sizing: border-box;
+}
+
+.checkout-container {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background-color: white;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.checkout-title {
+    margin: 0 0 30px;
+
+    text-align: center;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #222;
+}
+
+
+/* Form */
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.checkout-field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.checkout-field label {
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #333;
+}
+
+.checkout-field input,
+.checkout-field textarea {
+    width: 100%;
+
+    padding: 11px 13px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ccc;
+    border-radius: 7px;
+
+    background-color: white;
+    color: #222;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.checkout-field input {
+    height: 44px;
+}
+
+.checkout-field textarea {
+    min-height: 120px;
+
+    resize: vertical;
+
+    line-height: 1.5;
+}
+
+.checkout-field input:focus,
+.checkout-field textarea:focus {
+    border-color: #007bff;
+
+    box-shadow:
+        0 0 0 2px rgba(0, 123, 255, 0.15);
+}
+
+
+/* Validation Errors */
+
+.checkout-error {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #dc3545;
+}
+
+.checkout-stock-error {
+    margin: 0;
+    padding: 12px 14px;
+
+    border: 1px solid #dc3545;
+    border-radius: 7px;
+
+    background-color: #fff5f5;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #dc3545;
+}
+
+
+/* Place Order */
+
+.place-order-button {
+    width: 100%;
+
+    margin-top: 5px;
+    padding: 12px 18px;
+
+    border: 1px solid #007bff;
+    border-radius: 7px;
+
+    background-color: #007bff;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.place-order-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .checkout-page {
+        padding: 25px 15px 40px;
+    }
+
+    .checkout-container {
+        padding: 20px;
+
+        border-radius: 10px;
+    }
+
+    .checkout-title {
+        font-size: 24px;
+    }
+}
+
+body.dark-theme .checkout-page {
+    background-color: #0f172a;
+}
+
+body.dark-theme .checkout-title {
+    color: #f8fafc;
+}
+
+body.dark-theme .checkout-container {
+    background-color: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-theme .checkout-form {
+    color: #e2e8f0;
+}
+
+body.dark-theme .checkout-field label {
+    color: #e2e8f0;
+}
+
+body.dark-theme .checkout-field input {
+    background-color: #0f172a;
+    border-color: #475569;
+    color: #f8fafc;
+}
+
+body.dark-theme .checkout-field input:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15);
+}
+
+body.dark-theme .checkout-error {
+    color: #f87171;
+}
+
+body.dark-theme .checkout-stock-error {
+    background-color: #3b1f26;
+    border-color: #7f1d1d;
+    color: #fca5a5;
+}
+
+body.dark-theme .place-order-button {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+body.dark-theme .place-order-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+body.dark-theme .place-order-button:disabled {
+    background-color: #475569;
+    border-color: #475569;
+    color: #cbd5e1;
+}
+
+body.dark-theme .checkout-field textarea {
+    background-color: #0f172a;
+    border-color: #475569;
+    color: #f8fafc;
+}
+
+body.dark-theme .checkout-field textarea:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.15);
+}

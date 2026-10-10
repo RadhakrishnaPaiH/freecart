@@ -1,0 +1,369 @@
+.register-page {
+    min-height: 100vh;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 55px 20px 60px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f4f8ff 0%,
+            #ffffff 50%,
+            #eef5ff 100%
+        );
+}
+
+
+/* BRAND */
+
+.register-brand {
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+.register-brand h1 {
+    margin: 0;
+
+    font-size: 40px;
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    color: #007bff;
+}
+
+.register-brand p {
+    margin: 7px 0 0;
+
+    font-size: 14px;
+
+    color: #667085;
+}
+
+
+/* REGISTER CARD */
+
+.register-card {
+    width: 100%;
+    max-width: 460px;
+
+    box-sizing: border-box;
+
+    padding: 0 32px 32px;
+
+    background-color: white;
+
+    border: 1px solid #e4e7ec;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* AUTH NAVIGATION */
+
+.auth-navigation {
+    display: flex;
+
+    margin: 0 -32px 30px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.auth-nav-link {
+    flex: 1;
+
+    padding: 17px 10px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: #667085;
+
+    border-bottom: 3px solid transparent;
+
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.auth-nav-link:hover {
+    background-color: #f8fafc;
+
+    color: #007bff;
+}
+
+.active-auth-link {
+    color: #007bff;
+
+    border-bottom-color: #007bff;
+}
+
+
+/* HEADER */
+
+.register-header {
+    text-align: center;
+
+    margin-bottom: 28px;
+}
+
+.register-header h2 {
+    margin: 0 0 8px;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    color: #1f2937;
+}
+
+.register-header p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #667085;
+}
+
+
+/* FORM */
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 17px;
+}
+
+
+/* FIELD */
+
+.register-field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.register-field label {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #344054;
+}
+
+.register-field input {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px 13px;
+
+    border: 1px solid #d0d5dd;
+
+    border-radius: 8px;
+
+    background-color: white;
+
+    color: #1f2937;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.register-field input:focus {
+    border-color: #007bff;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 123, 255, 0.12);
+}
+
+
+/* MESSAGES */
+
+.register-error {
+    margin: -2px 0 0;
+
+    font-size: 13px;
+
+    color: #dc3545;
+}
+
+.register-success {
+    margin: -2px 0 0;
+
+    font-size: 13px;
+
+    color: #198754;
+}
+
+
+/* REGISTER BUTTON */
+
+.register-button {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 3px;
+
+    border: 1px solid #007bff;
+
+    border-radius: 8px;
+
+    background-color: #007bff;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+
+    transform: translateY(-1px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+    .register-page {
+        padding: 40px 15px;
+    }
+
+    .register-brand h1 {
+        font-size: 32px;
+
+        letter-spacing: 4px;
+    }
+
+    .register-card {
+        padding: 0 20px 25px;
+    }
+
+    .auth-navigation {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+/* Dark Mode */
+
+body.dark-theme .register-page {
+    background:
+        linear-gradient(
+            135deg,
+            #0f172a 0%,
+            #111827 50%,
+            #172554 100%
+        );
+}
+
+body.dark-theme .register-brand h1 {
+    color: #60a5fa;
+}
+
+body.dark-theme .register-brand p {
+    color: #94a3b8;
+}
+
+body.dark-theme .register-card {
+    background-color: #1e293b;
+    border-color: #334155;
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-theme .auth-navigation {
+    border-bottom-color: #334155;
+}
+
+body.dark-theme .auth-nav-link {
+    color: #94a3b8;
+}
+
+body.dark-theme .auth-nav-link:hover {
+    background-color: #263449;
+    color: #60a5fa;
+}
+
+body.dark-theme .active-auth-link {
+    color: #60a5fa;
+    border-bottom-color: #60a5fa;
+}
+
+body.dark-theme .register-header h2 {
+    color: #f8fafc;
+}
+
+body.dark-theme .register-header p {
+    color: #94a3b8;
+}
+
+body.dark-theme .register-field label {
+    color: #e2e8f0;
+}
+
+body.dark-theme .register-field input {
+    background-color: #0f172a;
+    border-color: #475569;
+    color: #f8fafc;
+}
+
+body.dark-theme .register-field input::placeholder {
+    color: #94a3b8;
+}
+
+body.dark-theme .register-field input:focus {
+    border-color: #60a5fa;
+    box-shadow:
+        0 0 0 3px rgba(96, 165, 250, 0.15);
+}
+
+body.dark-theme .register-error {
+    color: #f87171;
+}
+
+body.dark-theme .register-success {
+    color: #86efac;
+}
+
+body.dark-theme .register-button {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+body.dark-theme .register-button:hover {
+    background-color: #0056b3;
+}

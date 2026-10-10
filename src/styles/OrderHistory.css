@@ -1,0 +1,260 @@
+.order-history-page {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+    padding: 35px 30px 50px;
+
+    box-sizing: border-box;
+}
+
+
+/* Title */
+
+.order-history-title {
+    margin: 0 0 30px;
+
+    font-size: 30px;
+    font-weight: 700;
+
+    color: #222;
+}
+
+
+/* Empty */
+
+.order-history-empty {
+    text-align: center;
+
+    padding: 70px 20px;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    color: #555;
+}
+
+
+/* Order List */
+
+.order-history-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* Order Card */
+
+.order-history-card {
+    padding: 22px;
+
+    background-color: white;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.order-history-card:hover {
+    transform: translateY(-3px);
+
+    border-color: #d5d5d5;
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Order Header */
+
+.order-history-header {
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.order-history-header h3 {
+    margin: 0;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    color: #222;
+
+    word-break: break-all;
+}
+
+
+/* Details */
+
+.order-history-details {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 10px 30px;
+
+    padding: 18px 0;
+}
+
+.order-history-details p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #555;
+}
+
+.order-history-details strong {
+    color: #333;
+}
+
+
+/* Total */
+
+.order-history-details .order-history-total {
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #222;
+}
+
+
+/* View Order */
+
+.view-order-button {
+    padding: 10px 18px;
+
+    border: 1px solid #007bff;
+    border-radius: 7px;
+
+    background-color: #007bff;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.view-order-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    .order-history-page {
+        padding: 25px 15px 40px;
+    }
+
+    .order-history-title {
+        font-size: 26px;
+    }
+
+    .order-history-card {
+        padding: 18px;
+    }
+
+    .order-history-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .view-order-button {
+        width: 100%;
+    }
+}
+
+body.dark-theme .order-history-page {
+    background-color: #0f172a;
+}
+
+body.dark-theme .order-history-title {
+    color: #f8fafc;
+}
+
+body.dark-theme .order-history-empty {
+    color: #cbd5e1;
+}
+
+body.dark-theme .order-history-card {
+    background-color: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-theme .order-history-header {
+    border-color: #334155;
+}
+
+body.dark-theme .order-history-header h3 {
+    color: #f8fafc;
+}
+
+body.dark-theme .order-history-details p {
+    color: #cbd5e1;
+}
+
+body.dark-theme .order-history-total {
+    color: #f8fafc;
+}
+
+body.dark-theme .view-order-button {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+body.dark-theme .view-order-button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+body.dark-theme .order-history-details strong {
+    color: #f8fafc;
+}
+
+body.dark-theme .order-history-details p {
+    color: #cbd5e1;
+}
+
+body.dark-theme .order-history-total strong {
+    color: #f8fafc;
+}
+
+.cancel-order-button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #dc3545;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.cancel-order-button:hover {
+    background: #b02a37;
+    transform: translateY(-1px);
+}
+
+.cancel-order-button:active {
+    transform: translateY(0);
+}

@@ -1,0 +1,404 @@
+.order-confirmation-page {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 40px 30px 60px;
+
+    box-sizing: border-box;
+}
+
+.order-confirmation-container {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background-color: #f1f3f5;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+
+/* Success */
+
+.order-success {
+    text-align: center;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.order-success h2 {
+    margin: 0;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #198754;
+}
+
+.order-success-message {
+    margin: 8px 0 0;
+
+    font-size: 15px;
+
+    color: #666;
+}
+
+
+/* Order ID */
+
+.order-id {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    margin: 25px 0;
+    padding: 14px 16px;
+
+    background-color: #f8f9fa;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+}
+
+.order-id span {
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #555;
+}
+
+.order-id strong {
+    font-size: 14px;
+
+    color: #222;
+
+    word-break: break-all;
+}
+
+
+/* Sections */
+
+.order-section {
+    padding: 25px 0;
+
+    border-top: 1px solid #e5e5e5;
+}
+
+.order-section h3 {
+    margin: 0 0 18px;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #222;
+}
+
+
+/* Customer Details */
+
+.customer-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px 25px;
+}
+
+.customer-details p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #555;
+}
+
+.customer-details p strong {
+    color: #333;
+}
+
+
+/* Total */
+
+.order-total {
+    margin: 0;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    color: #222;
+}
+
+
+/* Ordered Products */
+
+.ordered-products {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.ordered-product {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 15px;
+
+    background-color: #f8f9fa;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 9px;
+}
+
+.ordered-product img {
+    width: 110px;
+    height: 110px;
+
+    flex-shrink: 0;
+
+    display: block;
+
+    object-fit: contain;
+
+    background-color: white;
+
+    border-radius: 7px;
+}
+
+.ordered-product-info {
+    min-width: 0;
+}
+
+.ordered-product-info h4 {
+    margin: 0 0 10px;
+
+    font-size: 17px;
+    font-weight: 600;
+
+    color: #222;
+}
+
+.ordered-product-info p {
+    margin: 5px 0;
+
+    font-size: 14px;
+
+    color: #555;
+}
+
+.ordered-product-info .ordered-subtotal {
+    font-weight: 600;
+
+    color: #222;
+}
+
+
+/* Continue Shopping */
+
+.order-confirmation-actions {
+    margin-top: 25px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #e5e5e5;
+
+    text-align: center;
+}
+
+.order-confirmation-actions a {
+    text-decoration: none;
+}
+
+.order-confirmation-actions button {
+    padding: 11px 22px;
+
+    border: 1px solid #007bff;
+    border-radius: 7px;
+
+    background-color: #007bff;
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.order-confirmation-actions button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+
+/* Order Not Found */
+
+.order-not-found {
+    width: 100%;
+    max-width: 600px;
+
+    margin: 70px auto;
+    padding: 40px 25px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background-color: white;
+
+    border: 1px solid #e2e2e2;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+.order-not-found h2 {
+    margin: 0 0 10px;
+
+    font-size: 24px;
+
+    color: #222;
+}
+
+.order-not-found p {
+    margin: 0;
+
+    font-size: 15px;
+
+    color: #666;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+    .order-confirmation-page {
+        padding: 25px 15px 40px;
+    }
+
+    .order-confirmation-container {
+        padding: 20px;
+    }
+
+    .order-success h2 {
+        font-size: 24px;
+    }
+
+    .customer-details {
+        grid-template-columns: 1fr;
+    }
+
+    .ordered-product {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 500px) {
+    .order-id {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ordered-product {
+        flex-direction: column;
+    }
+
+    .ordered-product img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .ordered-product-info {
+        width: 100%;
+    }
+
+    .order-confirmation-actions button {
+        width: 100%;
+    }
+}
+
+body.dark-theme .order-confirmation-page {
+    background-color: #0f172a;
+}
+
+body.dark-theme .order-confirmation-container {
+    background-color: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+body.dark-theme .order-confirmation-container h2,
+body.dark-theme .order-confirmation-container h3 {
+    color: #f8fafc;
+}
+
+body.dark-theme .order-success {
+    color: #86efac;
+}
+
+body.dark-theme .order-success-message {
+    color: #86efac;
+}
+
+body.dark-theme .order-id {
+    color: #cbd5e1;
+}
+
+body.dark-theme .order-section {
+    border-color: #334155;
+}
+
+body.dark-theme .customer-details p {
+    color: #cbd5e1;
+}
+
+body.dark-theme .order-total {
+    color: #f8fafc;
+}
+
+body.dark-theme .ordered-products {
+    color: #e2e8f0;
+}
+
+body.dark-theme .ordered-product {
+    background-color: #0f172a;
+    border-color: #334155;
+}
+
+body.dark-theme .ordered-product-info p {
+    color: #cbd5e1;
+}
+
+body.dark-theme .ordered-subtotal {
+    color: #f8fafc;
+}
+
+body.dark-theme .order-confirmation-actions button {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+body.dark-theme .order-confirmation-actions button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+body.dark-theme .order-not-found {
+    color: #cbd5e1;
+}
