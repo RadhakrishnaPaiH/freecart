@@ -50,7 +50,7 @@ Install [Node.js](https://nodejs.org/) and npm before running the project.
 2. Navigate to the project folder:
 
    ```bash
-   cd YOUR_PROJECT_FOLDER
+   cd productmanagement
    ```
 
 3. Install the dependencies:
