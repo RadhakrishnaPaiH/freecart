@@ -1,11 +1,10 @@
 import { Link, useParams } from "react-router-dom";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { ProductContext } from "../context/ProductContext";
 import { WishlistContext } from "../context/WishlistContext";
 import { CartContext } from "../context/CartContext";
 import { UserContext } from "../context/UserContext";
-import cleanupDeletedProduct from "../services/cleanupDeletedProduct";
 import "../styles/ProductDetails.css";
 
 function ProductDetails() {
@@ -18,12 +17,9 @@ function ProductDetails() {
 
     const {
         products,
-        setProducts,
         loading,
         error
     } = useContext(ProductContext);
-
-    const [deleting, setDeleting] = useState(false);
 
     const { wishlist, setWishlist } = useContext(WishlistContext);
 
@@ -32,33 +28,6 @@ function ProductDetails() {
     const product = products.find(
         (product) => product.id === Number(id)
     );
-
-    const handleDelete = () => {
-
-        if (!user || user.role !== "admin") {
-            return;
-        }
-
-        const confirmDelete = window.confirm(
-            "Are you sure you want to delete this product?"
-        );
-
-        if (!confirmDelete) {
-            return;
-        }
-
-        setDeleting(true);
-
-        cleanupDeletedProduct(product.id);
-
-        setProducts(prevProducts =>
-            prevProducts.filter(
-                (item) => item.id !== product.id
-            )
-        );
-
-        navigate("/");
-    };
 
     if (loading) {
         return <p className="product-details-message">Loading...</p>;
@@ -187,33 +156,6 @@ function ProductDetails() {
                     <p className="product-description">
                         {product.description}
                     </p>
-
-                    <div className="product-admin-actions">
-
-                        {user && user.role === "admin" && (
-                            <button
-                                onClick={() =>
-                                    navigate(
-                                        `/products/${product.id}/edit`
-                                    )
-                                }
-                            >
-                                Edit
-                            </button>
-                        )}
-
-                        {user && user.role === "admin" && (
-                            <button
-                                onClick={handleDelete}
-                                disabled={deleting}
-                            >
-                                {deleting
-                                    ? "Deleting"
-                                    : "Delete"}
-                            </button>
-                        )}
-
-                    </div>
 
                     <div className="product-actions">
 

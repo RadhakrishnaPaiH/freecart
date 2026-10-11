@@ -122,7 +122,7 @@ function EditProduct() {
                 )
             );
 
-            navigate(`/products/${id}`);
+            navigate("/admin/products");
 
         } catch (error) {
 

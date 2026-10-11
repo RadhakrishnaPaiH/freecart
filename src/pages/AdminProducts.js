@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { ProductContext } from "../context/ProductContext";
 import { useNavigate } from "react-router-dom";
 import cleanupDeletedProduct from "../services/cleanupDeletedProduct";
+import { Link } from "react-router-dom";
 import "../styles/AdminProducts.css";
 
 
@@ -266,18 +267,18 @@ function AdminProducts() {
                     </div>
 
                     {sortedProducts.map(product => (
-
                         <div
                             className="admin-product-row"
                             key={product.id}
                         >
 
                             <div className="admin-product-info">
-
-                                <img
-                                    src={product.image}
-                                    alt={product.title}
-                                />
+                                <Link to={`/admin/products/${product.id}`}>
+                                    <img
+                                        src={product.image}
+                                        alt={product.title}
+                                    />
+                                </Link>
 
                                 <h2>{product.title}</h2>
 

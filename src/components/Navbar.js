@@ -28,28 +28,64 @@ function Navbar() {
         </NavLink>
 
         <div className="nav-links">
-            <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"} end>
-                Products
-            </NavLink>
+            {user?.role === "admin" ? (
+                <>
+                    <NavLink to="/admin" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    } end>
+                        Admin Dashboard
+                    </NavLink>
 
-            <NavLink to="/wishlist" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-                ❤️ Wishlist
-            </NavLink>
+                    <NavLink to="/admin/products" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    }>
+                        Manage Products
+                    </NavLink>
 
-            <NavLink to="/cart" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-                🛒 Cart[{totalQuantity}]
-            </NavLink>
+                    <NavLink to="/products/add" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    }>
+                        Add Product
+                    </NavLink>
 
-            <NavLink to="/order-history" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>
-                📦 Order History
-            </NavLink>
-        
-            {user && user.role === "admin" && (
-                <NavLink to="/admin" className={({ isActive }) =>
-                    isActive ? "nav-link active" : "nav-link"
-                }>
-                    Admin Dashboard
-                </NavLink>
+                    <NavLink to="/admin/orders" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    }>
+                        Manage Orders
+                    </NavLink>
+
+                    <NavLink to="/admin/users" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    }>
+                        Manage Users
+                    </NavLink>
+                </>
+            ) : (
+                <>
+                    <NavLink to="/" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    } end>
+                        Products
+                    </NavLink>
+
+                    <NavLink to="/wishlist" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    }>
+                        ❤️ Wishlist
+                    </NavLink>
+
+                    <NavLink to="/cart" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    }>
+                        🛒 Cart[{totalQuantity}]
+                    </NavLink>
+
+                    <NavLink to="/order-history" className={({ isActive }) =>
+                        isActive ? "nav-link active" : "nav-link"
+                    }>
+                        📦 Order History
+                    </NavLink>
+                </>
             )}
         </div>
 

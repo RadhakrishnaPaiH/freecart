@@ -19,6 +19,8 @@ import AdminProducts from "./pages/AdminProducts";
 import AdminOrders from "./pages/AdminOrders";
 import AdminUsers from "./pages/AdminUsers";
 import AdminUserDetails from "./pages/AdminUserDetails";
+import CustomerRoute from './components/CustomerRoute';
+import AdminProductDetails from "./pages/AdminProductDetails";
 import './App.css';
 
 function App() {
@@ -43,7 +45,14 @@ function App() {
 
       <Routes>
 
-        <Route path='/' element={<Products />} />
+        <Route
+          path="/"
+          element={
+            <CustomerRoute>
+              <Products />
+            </CustomerRoute>
+          }
+        />
 
         <Route
           path="/admin"
@@ -59,6 +68,15 @@ function App() {
           element={
             <ProtectedRoute>
               <AdminProducts />
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/admin/products/:id"
+          element={
+            <ProtectedRoute>
+              <AdminProductDetails />
             </ProtectedRoute>
           }
         />
@@ -101,17 +119,29 @@ function App() {
 
         <Route
           path='/wishlist'
-          element={<Wishlist />}
+          element={
+            <CustomerRoute>
+              <Wishlist />
+            </CustomerRoute>
+          }
         />
 
         <Route
           path='/cart'
-          element={<Cart />}
+          element={
+            <CustomerRoute>
+              <Cart />
+            </CustomerRoute>
+          }
         />
 
         <Route
           path='/checkout'
-          element={<Checkout />}
+          element={
+            <CustomerRoute>
+              <Checkout />
+            </CustomerRoute>
+          }
         />
 
         <Route
@@ -125,18 +155,30 @@ function App() {
         />
 
         <Route
-          path="/order-confirmation"
-          element={<OrderConfirmation />}
+          path='/order-confirmation'
+          element={
+            <CustomerRoute>
+              <OrderConfirmation />
+            </CustomerRoute>
+          }
         />
 
         <Route
           path='/order-history'
-          element={<OrderHistory />}
+          element={
+            <CustomerRoute>
+              <OrderHistory />
+            </CustomerRoute>
+          }
         />
 
         <Route
-          path='/products/:id'
-          element={<ProductDetails />}
+          path="/products/:id"
+          element={
+            <CustomerRoute>
+              <ProductDetails />
+            </CustomerRoute>
+          }
         />
 
         <Route
@@ -149,8 +191,12 @@ function App() {
         />
 
         <Route
-          path="/orders/:id"
-          element={<OrderDetails />}
+          path='/orders/:id'
+          element={
+            <CustomerRoute>
+              <OrderDetails />
+            </CustomerRoute>
+          }
         />
 
       </Routes>

@@ -35,7 +35,12 @@ function Login() {
         }
 
         setUser(foundUser);
-        navigate("/");
+        
+        if (foundUser.role === "admin") {
+            navigate("/admin");
+        } else {
+            navigate("/");
+        }
     };
 
     return (
