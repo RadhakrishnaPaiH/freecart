@@ -193,9 +193,9 @@ function App() {
         <Route
           path='/orders/:id'
           element={
-            <CustomerRoute>
+            // <CustomerRoute>
               <OrderDetails />
-            </CustomerRoute>
+            // </CustomerRoute>
           }
         />
 

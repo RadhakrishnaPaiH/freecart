@@ -47,7 +47,7 @@ function Login() {
         <div className="login-page">
 
             <div className="login-brand">
-                <h1>NEXORA</h1>
+                <h1>FreeCart</h1>
                 <p>Your store, your account.</p>
             </div>
 
@@ -79,7 +79,7 @@ function Login() {
 
                 <div className="login-header">
                     <h2>Welcome Back</h2>
-                    <p>Sign in to continue to NEXORA.</p>
+                    <p>Sign in to continue to FreeCart.</p>
                 </div>
 
                 <form

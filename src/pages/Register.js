@@ -73,7 +73,7 @@ function Register() {
         <div className="register-page">
 
             <div className="register-brand">
-                <h1>NEXORA</h1>
+                <h1>FreeCart</h1>
                 <p>Your store, your account.</p>
             </div>
 
@@ -105,7 +105,7 @@ function Register() {
 
                 <div className="register-header">
                     <h2>Create Your Account</h2>
-                    <p>Join NEXORA and start shopping.</p>
+                    <p>Join FreeCart and start shopping.</p>
                 </div>
 
                 <form

@@ -24,7 +24,7 @@ function Navbar() {
   return (
     <nav className="navbar">
         <NavLink to="/" className="store-name">
-            HAVENMART
+            FreeCart
         </NavLink>
 
         <div className="nav-links">
