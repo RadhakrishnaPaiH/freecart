@@ -45,7 +45,7 @@ FreeCart is a React-based e-commerce web application developed as a portfolio pr
 
 Install [Node.js](https://nodejs.org/) and npm before running the project.
 
-###Admin Creation
+### Admin Creation
 
 Use the following mail with any pasword of you choice
 email: admin@productstore.com
