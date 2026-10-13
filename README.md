@@ -47,7 +47,7 @@ Install [Node.js](https://nodejs.org/) and npm before running the project.
 
 ### Admin Creation
 
-Use the following mail with any pasword of you choice
+Use the following mail with any password of you choice while registering, then login to enter admin dashboard.
 email: admin@productstore.com
 
 ### Installation
