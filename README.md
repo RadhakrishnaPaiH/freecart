@@ -1,7 +1,7 @@
 
-# HavenMart – E-Commerce Product Store
+# BuyNest – E-Commerce Product Store
 
-HavenMart is a React-based e-commerce web application developed as a portfolio project. It provides a shopping experience for customers and product, order, and user management features for administrators.
+BuyNest is a React-based e-commerce web application developed as a portfolio project. It provides a shopping experience for customers and product, order, and user management features for administrators.
 
 ## Features
 
@@ -50,13 +50,13 @@ Install [Node.js](https://nodejs.org/) and npm before running the project.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/RadhakrishnaPaiH/havenmart.git
+   git clone https://github.com/RadhakrishnaPaiH/buynest.git
    ```
 
 2. Navigate to the cloned project directory:
 
    ```bash
-   cd havenmart
+   cd productmanagement
    ```
 
 3. Install the dependencies:
@@ -86,7 +86,7 @@ Install [Node.js](https://nodejs.org/) and npm before running the project.
 
 ## Data and Security Limitations
 
-HavenMart is currently a frontend portfolio project and does not have a dedicated backend.
+BuyNest is currently a frontend portfolio project and does not have a dedicated backend.
 
 - Fake Store API provides sample product data.
 - Products created in the application are stored in the browser's Local Storage and are not automatically shared across different users or devices.
